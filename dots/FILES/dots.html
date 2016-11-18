@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dots & Boxes</title>
+<link rel="shortcut icon" href="yd32.ico">
+</head>
+<body>
+        <h2 style="margin:0px;">Dots & Boxes: pixel art games are 'in', right?</h2>
+        <center>
+        <img id="pic" style="margin-top:30px">
+
+        </center>
+</body>
+<script type="text/javascript">
+        console.log("PING");
+        var pic = document.getElementById("pic");
+        pic.src = "dots.png?"+ new Date().getTime();
+        window.setInterval(function() {
+                pic.src = "dots.png?"+ new Date().getTime();
+                        }, 1000);
+
+</script>
+</html>
+
